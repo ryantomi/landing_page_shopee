@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page Shopee By Ryan</title>
+    <meta name="description" content="Temukan informasi lengkap tentang rekomendasi produk Shopee landing page by Ryan Tomi Alfrianto">
+    <link rel="icon" href="https://img.icons8.com/pastel-glyph/64/shopping-cart--v2.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            font-family: 'Poppins', cursive;
+        }
+        .btn-animate {
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            animation: fadeInScale 0.6s ease-in-out;
+        }
+        .btn-animate:hover {
+            transform: translateY(-5px);
+            background-color: #c48b8b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-animate:active {
+            transform: translateY(0);
+            background-color: #c48b8b;
+        }
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .menu-button {
+            background-color: #c48b8b;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 5px 0;
+            display: block;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .menu-button:hover {
+            background-color: #b47878;
+        }
+        .submenu {
+            display: none;
+            margin-top: 5px;
+            list-style-type: none;
+            padding: 0;
+            transition: max-height 0.5s ease;
+            overflow: hidden;
+        }
+        .submenu-button {
+            background-color: #e4b3b3;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 0px 0;
+            display: block;
+            transition: background-color 0.3s;
+            width: calc(100% - 20px);
+            margin-left: 20px;
+            text-align: center;
+        }
+        .submenu-button:hover {
+            background-color: #c48b8b;
+            color: white;
+        }
+        .slide-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 20px;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            border-radius: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -50px;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide2 {
+            min-width: 100%;
+            box-sizing: border-box;
+            border-radius: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -50px;
+            background-image: url('assets/images/Maroon-Frame-PNG-Image-File.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .content-container {
+            overflow-y: auto;
+            flex-grow: 1; /* Allow the content container to grow */
+            padding-right: 10px;
+            margin-bottom: 20px; /* Space for the footer */
+        }
+        .star-shadow {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .shadow-text {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+        }
+        .bg-doodle {
+            background-image: url('assets/images/pngwing.com (1).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .text-frame {
+            width: 100%;
+            max-width: 600px;
+            border: 0px solid #333;
+            padding: 0px;
+            overflow: hidden;
+            margin: 0px auto;
+            margin-bottom: 1px;
+            background-color: #ffffff;
+        }
+        .running-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-text 10s linear infinite;
+            padding-right: 10%;
+        }
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            15% {
+                opacity: 1;
+            }
+            85% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+        }
+        .submenu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .submenu-item {
+            box-sizing: border-box;
+        }
+    </style>
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+</head>
+<body class="bg-doodle flex justify-center items-center min-h-screen overflow-hidden">
+
+    <div class="slide-container w-full max-w-xl sm:max-w-sm">
+        <!-- Page 1 -->
+        <div class="slide bg-white p-6 shadow-lg max-h-screen flex flex-col">
+            <div class="flex justify-center mb-4">
+                <img alt="Logo" class="h-20 w-20 rounded-full" src="https://down-tx-id.img.susercontent.com/id-11134216-7r992-lsq0ntpgbqxzdf_tn.webp"/>
+            </div>
+            <h1 class="text-2xl font-bold text-center text-[#a52a2a] mb-4">
+                PRODUK RECOMMENDED
+            </h1>
+            <div class="text-center">
+                <a href="https://shopee.co.id/rillanashop" target="_blank">
+                    <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" 
+                         alt="Shopee Logo" class="h-9 inline">
+                </a>
+            </div>
+            <p class="text-center text-[#a52a2a] text-lg mb-6">Spall Spill Kategori</p>
+            <div class="content-container" id="menuContainer">
+                <!-- Data menu akan dimuat di sini -->
+            </div>
+            <footer class="mt-6">
+                <p class="text-center text-[#a52a2a] font-light shadow-text">Please contact us for Endorsements and Collaborations</p><br>
+                <div class="flex justify-center space-x-4 mb-2">
+                    <a href="https://wa.me/6285156252841" target="_blank" class="text-[#a52a2a] hover:text-[#a0522d]">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dillanq" target="_blank" class="text-[#a52a2a] hover:text-[#a0522d]">
+                        <i class="fab fa-instagram text-2xl" ></i>
+                    </a>
+                    <a href="https://shopee.co.id/rillanashop" target="_blank" class="text-[#a52a2a] hover:text-[#a0522d]">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </a>
+                </div>
+                <p class="text-center text-[#a52a2a] font-light shadow-text">Ryan Tomi Alfrianto</p>
+                <div class="text-frame"><br>
+                    <hr>
+                    <div class="running-text">
+                        <p class="text-black">Selamat Datang di Landing Page By Ryan! Ayooo Cek Shopee dulu termurah gratis ongkir !!</p>
+                    </div>
+                </div>
+                <hr>
+            </footer>
+        </div>
+        <!-- Page 2 -->
+        <div class="slide2 bg-white p-6 shadow-lg flex flex-col justify-center items-center">
+            <h3 class="text-1xl font-semibold text-center text-black mb-4">Design By :</h3>
+            <div class="flex justify-center items-center space-x-4">
+                <a href="https://www.instagram.com/ryantomialfrianto" class="bg-[#800000] text-white font-semibold py-3 px-6 rounded-lg shadow-md transform transition-all hover:scale-105 hover:bg-[#b47878] active:scale-95 inline-block">
+                    <i class="fas mr-2"></i> RYAN TOMI ALFRIANTO
+                </a>
+            </div>
+            <br>
+            <hr>
+            <div id="visitor-stats">
+                Memuat Statistik...
+            </div>
+        </div>
+    </div>
+    <!-- Tombol Arah -->
+    <div class="absolute right-4 top-[80%] transform -translate-y-1/2">
+        <button id="toggleSlide" class="bg-[#a52a2a] p-6 w-13 h-13 rounded-full shadow-lg btn-animate hover:bg-[#a52a2a]" onclick="toggleSlide()">
+            <i id="arrowIcon" class="fas fa-arrow-right text-white"></i>
+        </button>
+    </div>
+
+    <!-- Tombol Musik -->
+    <div class="absolute right-4 top-[40%] transform -translate-y-1/2">
+        <button id="toggleMusicButton" class="bg-[#a52a2a] p-2 w-9 h-9 rounded-full shadow-lg btn-animate hover:bg-[#a52a2a]" onclick="toggleMusic()">
+            <i id="musicIcon" class="fas fa-play text-white text-sm"></i>
+        </button>
+    </div>
+
+    <!-- Tambahkan elemen audio -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/LIVE SELLING BACKGROUND MUSIC (NO COPYRIGHT).mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <script>
+        let currentSlide = 0;
+        let startX = 0; // Untuk menyimpan posisi awal
+        let isDragging = false; // Untuk mengecek apakah sedang drag
+        const slideContainer = document.querySelector('.slide-container');
+        const arrowIcon = document.getElementById('arrowIcon');
+
+        function toggleSlide() {
+            currentSlide = (currentSlide + 1) % 2;
+            slideContainer.style.transform = `translateX(-${currentSlide * 105}%)`;
+            updateArrowIcon();
+        }
+
+        function updateArrowIcon() {
+            if (currentSlide === 1) {
+                arrowIcon.classList.remove('fa-arrow-right');
+                arrowIcon.classList.add('fa-arrow-left');
+            } else {
+                arrowIcon.classList.remove('fa-arrow-left');
+                arrowIcon.classList.add('fa-arrow-right');
+            }
+        }
+
+        // Event listener untuk menangkap awal drag
+        slideContainer.addEventListener('mousedown', (e) => {
+            startX = e.pageX; // Simpan posisi awal
+            isDragging = true; // Tandai bahwa kita sedang drag
+        });
+
+        // Event listener untuk menangkap gerakan drag
+        slideContainer.addEventListener('mousemove', (e) => {
+            if (!isDragging) return; // Jika tidak sedang drag, keluar dari fungsi
+            const currentX = e.pageX; // Posisi saat ini
+            const diffX = startX - currentX; // Hitung perbedaan posisi
+            slideContainer.style.transform = `translateX(-${currentSlide * 105 - (diffX / window.innerWidth) * 100}%)`;
+
+            // Update ikon panah berdasarkan arah drag
+            if (diffX > 0) {
+                arrowIcon.classList.remove('fa-arrow-right');
+                arrowIcon.classList.add('fa-arrow-left');
+            } else {
+                arrowIcon.classList.remove('fa-arrow-left');
+                arrowIcon.classList.add('fa-arrow-right');
+            }
+        });
+
+        // Event listener untuk menangkap akhir drag
+        slideContainer.addEventListener('mouseup', (e) => {
+            if (!isDragging) return; // Jika tidak sedang drag, keluar dari fungsi
+            isDragging = false; // Reset drag
+            const currentX = e.pageX; // Posisi saat ini
+            const diffX = startX - currentX; // Hitung perbedaan posisi
+
+            // Jika pergerakan lebih dari setengah lebar slide, pindah slide
+            if (diffX > 50) {
+                currentSlide = (currentSlide + 1) % 2; // Geser ke kanan
+            } else if (diffX < -50) {
+                currentSlide = (currentSlide - 1 + 2) % 2; // Geser ke kiri
+            }
+
+            // Kembalikan ke posisi slide yang benar
+            slideContainer.style.transform = `translateX(-${currentSlide * 105}%)`;
+            updateArrowIcon(); // Update ikon panah setelah drag selesai
+        });
+
+        // Event listener untuk menangkap akhir drag pada perangkat sentuh
+        slideContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX; // Simpan posisi awal
+            isDragging = true; // Tandai bahwa kita sedang drag
+        });
+
+        slideContainer.addEventListener('touchmove', (e) => {
+            if (!isDragging) return; // Jika tidak sedang drag, keluar dari fungsi
+            const currentX = e.touches[0].pageX; // Posisi saat ini
+            const diffX = startX - currentX; // Hitung perbedaan posisi
+            slideContainer.style.transform = `translateX(-${currentSlide * 105 - (diffX / window.innerWidth) * 100}%)`;
+
+            // Update ikon panah berdasarkan arah drag
+            if (diffX > 0) {
+                arrowIcon.classList.remove('fa-arrow-right');
+                arrowIcon.classList.add('fa-arrow-left');
+            } else {
+                arrowIcon.classList.remove('fa-arrow-left');
+                arrowIcon.classList.add('fa-arrow-right');
+            }
+        });
+
+        slideContainer.addEventListener('touchend', (e) => {
+            if (!isDragging) return; // Jika tidak sedang drag, keluar dari fungsi
+            isDragging = false; // Reset drag
+            const currentX = e.changedTouches[0].pageX; // Posisi saat ini
+            const diffX = startX - currentX; // Hitung perbedaan posisi
+
+            // Jika pergerakan lebih dari setengah lebar slide, pindah slide
+            if (diffX > 50) {
+                currentSlide = (currentSlide + 1) % 2; // Geser ke kanan
+            } else if (diffX < -50) {
+                currentSlide = (currentSlide - 1 + 2) % 2; // Geser ke kiri
+            }
+
+            // Kembalikan ke posisi slide yang benar
+            slideContainer.style.transform = `translateX(-${currentSlide * 105}%)`;
+            updateArrowIcon(); // Update ikon panah setelah drag selesai
+        });
+
+        function toggleSubMenu(event) {
+            const menuButton = event.target;
+            const submenuContainer = menuButton.nextElementSibling;
+            if (submenuContainer.style.display === 'none' || submenuContainer.style.display === '') {
+                submenuContainer.style.display = 'block';
+                submenuContainer.style.maxHeight = submenuContainer.scrollHeight + 'px';
+                submenuContainer.style.transition = 'max-height 0.5s ease-in-out';
+            } else {
+                submenuContainer.style.maxHeight = '0';
+                setTimeout(() => {
+                    submenuContainer.style.display = 'none';
+                }, 500);
+            }
+        }
+
+        fetch('update_visitors.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('visitor-stats').innerHTML = `Total Pengunjung: ${data}`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        const toggleMusicButton = document.getElementById('toggleMusicButton');
+        const musicIcon = document.getElementById('musicIcon');
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                backgroundMusic.pause();
+                musicIcon.classList.remove('fa-pause');
+                musicIcon.classList.add('fa-play');
+            } else {
+                backgroundMusic.play();
+                musicIcon.classList.remove('fa-play');
+                musicIcon.classList.add('fa-pause');
+            }
+            isPlaying = !isPlaying;
+        }
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'v' || e.key === 'V')) {
+                e.preventDefault();
+            }
+        });
+
+        document.addEventListener('touchstart', function (e) {
+            e.preventDefault();
+        });
+
+        function loadMenus() {
+            fetch('api.php')
+                .then(response => response.json())
+                .then(menus => {
+                    const menuContainer = document.getElementById('menuContainer');
+                    menuContainer.innerHTML = '';
+
+                    menus.forEach(menu => {
+                        if (menu.submenus && menu.submenus.length > 0) {
+                            const menuButton = document.createElement('button');
+                            menuButton.className = 'menu-button btn-animate';
+                            menuButton.innerText = menu.title;
+                            menuButton.onclick = toggleSubMenu;
+
+                            const submenuContainer = document.createElement('ul');
+                            submenuContainer.className = 'submenu';
+                            const submenuWrapper = document.createElement('div');
+                            submenuWrapper.className = 'submenu-container';
+
+                            menu.submenus.forEach(submenu => {
+                                const submenuItem = document.createElement('div');
+                                submenuItem.className = 'submenu-item';
+                                const submenuButton = document.createElement('button');
+                                submenuButton.className = 'submenu-button btn-animate';
+                                submenuButton.innerText = submenu.title;
+                                submenuButton.onclick = () => window.open(submenu.link, '_blank');
+                                submenuItem.appendChild(submenuButton);
+                                submenuWrapper.appendChild(submenuItem);
+                            });
+
+                            submenuContainer.appendChild(submenuWrapper);
+                            menuContainer.appendChild(menuButton);
+                            menuContainer.appendChild(submenuContainer);
+                        } else {
+                            const menuButton = document.createElement('button');
+                            menuButton.className = 'menu-button btn-animate';
+                            menuButton.innerText = menu.title;
+                            menuButton.onclick = () => window.open(menu.link, '_blank');
+                            menuContainer.appendChild(menuButton);
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        loadMenus();
+    </script>
+</body>
+</html>
