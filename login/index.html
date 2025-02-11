@@ -1,0 +1,80 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e293b, #4a5568);
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .login-container {
+            background: #2d3748;
+            color: #cbd5e0;
+            border: 1px solid #4a5568;
+        }
+        .login-container h2 {
+            color: #cbd5e0;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            background: #4a5568;
+            color: #cbd5e0;
+            border: 1px solid #6b7280;
+        }
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            border-color: #38b2ac;
+        }
+        .login-container input[type="submit"] {
+            background: #38b2ac;
+            color: #ffffff;
+        }
+        .login-container input[type="submit"]:hover {
+            background: #4fd1c5;
+        }
+        .login-container .text-gray-600 {
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="login-container p-8 rounded-lg shadow-lg w-full max-w-sm transform transition-transform hover:scale-105">
+        <div class="logo">
+            <img src="https://down-tx-id.img.susercontent.com/id-11134216-7r992-lsq0ntpgbqxzdf_tn.webp" alt="Logo">
+        </div>
+        <h2 class="text-2xl font-bold text-center mb-6">LOGIN LANDING PAGE BY RYAN</h2>
+        <form method="POST" action="login.php">
+            <div class="mb-4">
+                <input type="text" name="username" placeholder="Username" required class="w-full p-3 rounded-lg focus:outline-none focus:border-green-500 transition-colors">
+            </div>
+            <div class="mb-4">
+                <input type="password" name="password" placeholder="Password" required class="w-full p-3 rounded-lg focus:outline-none focus:border-green-500 transition-colors">
+            </div>
+            <div>
+                <input type="submit" value="Login" class="w-full p-3 rounded-lg cursor-pointer hover:bg-green-600 transition-colors transform hover:-translate-y-1 active:translate-y-0">
+            </div>
+        </form>
+        <div class="text-center mt-6">
+            <p>Copyright &copy; 2024 Ryan Tomi Alfrianto</p>
+        </div>
+    </div>
+</body>
+</html>
